@@ -26,6 +26,8 @@
 8. a function that prints a square, using #
 9. a program that prints the numbers from 1 to 100, "Fizz" for multiples of three, "Buzz" for multiples of five, and "FizzBuzz" for numbers which are multiples of both three and five
 10. a function that prints a triangle with # based on size argument
+11. a program that finds and prints the largest prime factor of the number 612852475143
+12. a function that prints an integer
 
 
 ## Authors
