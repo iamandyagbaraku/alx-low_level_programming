@@ -3,12 +3,12 @@
 /**
  * _atoi - converts the string argument *s (str) to an integer (type int).
  * @*s: This is the string representation of an integral number.
- *
  * Return: (int) converted string
  */
 int _atoi(char *s)
 {
 	int i, d, n, len, f, digit;
+
 	i = 0;
 	d = 0;
 	n = 0;
@@ -35,12 +35,11 @@ int _atoi(char *s)
 		i++;
 	}
 	if (f == 0)
-		return (0);
+	return (0);
 	return (n);
 }
-
 /**
- * main - multiplies two numbers.
+ * main - multiplies two numbers
  * @argc: number of arguments
  * @argv: array of arguments
  *
@@ -49,6 +48,7 @@ int _atoi(char *s)
 int main(int argc, char **argv)
 {
 	int num1, num2, result;
+
 	if (argc < 3 || argc > 3)
 	{
 		printf("Error\n");
@@ -57,8 +57,7 @@ int main(int argc, char **argv)
 	num1 = _atoi(argv[1]);
 	num2 = _atoi(argv[2]);
 	result = num1 * num2;
-	
 	printf("%d\n", result);
-	
+
 	return (0);
 }
