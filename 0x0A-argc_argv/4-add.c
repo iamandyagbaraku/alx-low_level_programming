@@ -3,28 +3,28 @@
 #include <stdbool.h> /* bool data type */
 
 /**
- * is_num - iterate through each argv to test if it's a number
- * @str: a argv
- * Return: true only if entire string is a number, false if not
+ * is_num - iterate through each string if it's a number
+ * @str: strig
+ * Return: true only if entire string is a number, and false if it is not
  */
 
 bool is_num(char *str)
 {
-	int n = 0;
+	int i = 0;
 
-	for (n = 0; str[n]; n++)
+	for (i = 0; str[i]; i++)
 	{
-		if (!(str[n] >= '0' && str[n] <= '9'))
+		if (!(str[i] >= '0' && str[i] <= '9'))
 			return (0);
 	}
 	return (1);
 }
 
 /**
- * main - print sum if all arguments given are numbers
+ * main - print sum if all strings if they are numbers
  * @argc: argument counter
  * @argv: arguments
- * Return: 0 on success, 1 if an argument is not a number
+ * Return: 0 on success, 1 if an argument isn't a number
  */
 
 int main(int argc, char **argv)
@@ -42,12 +42,13 @@ int main(int argc, char **argv)
 	/* check all arguments to add numbers */
 	while (i < argc)
 	{
-		if(!is_num(argv[i]))
+		if (is_num(argv[i]))
+			sum += atoi(argv[i]);
+		else
 		{
-			printf("Error\");
+			printf("Error\n");
 			return (1);
 		}
-		sum += atoi(argv[i]);
 		i++;
 	}
 	printf("%d\n", sum);
