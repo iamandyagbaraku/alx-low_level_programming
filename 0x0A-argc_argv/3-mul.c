@@ -4,6 +4,7 @@
  * _atoi - converts the string argument *s (str) to an integer (type int).
  * @*s: This is the string representation of an integral number.
  * Return: (int) converted string
+ *
  */
 int _atoi(char *s)
 {
@@ -35,7 +36,7 @@ int _atoi(char *s)
 		i++;
 	}
 	if (f == 0)
-	return (0);
+		return (0);
 	return (n);
 }
 /**
