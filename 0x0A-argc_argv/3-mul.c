@@ -3,6 +3,7 @@
 /**
  * _atoi - converts the string argument *s (str) to an integer (type int).
  * @*s: This is the string representation of an integral number.
+ *
  * Return: (int) converted string
  */
 int _atoi(char *s)
